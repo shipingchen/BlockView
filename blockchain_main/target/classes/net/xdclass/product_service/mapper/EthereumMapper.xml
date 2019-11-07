@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="net.xdclass.product_service.mapper.EthereumMapper">
+    
+    <select id="getBlocks" resultType="net.xdclass.product_service.domain.Ethereum">
+        select * from Ethereum order by blockNumber DESC
+    </select>
+    <insert id="add">
+        insert into Ethereum(blockNumber, timeStamp, blockMiner, blockReward, uncleReward)
+        values(#{blockNumber}, #{timeStamp}, #{blockMiner}, #{blockReward}, #{uncleReward})
+    </insert>
+
+    <select id="selectOne" resultType="net.xdclass.product_service.domain.Ethereum">
+        select * from Ethereum where blockNumber=#{id}
+    </select>
+    
+</mapper>

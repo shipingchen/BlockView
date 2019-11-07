@@ -1,0 +1,52 @@
+
+#指定注册中心地址
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+#服务的名称
+spring:
+  application:
+    name: product-service
+  #指定从哪个配置中心读取
+  cloud:
+    config:
+      discovery:
+        service-id: CONFIG-SERVER
+        enabled: true
+      profile: dev
+      #建议用label去区分环境，默认是label是bootstrap分支
+      label: test
+
+  #连接数据库
+  datasource:
+    username: root
+    password: 19941220qin
+    #mysql8版本以上的驱动包需要指定时区
+    url: jdbc:mysql://127.0.0.1:3306/block?serverTimezone=UTC
+    #mysql8版本以上指定新的驱动类
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+
+#暴露全部的监控信息
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+
+#配置mybayis相关文件路径
+mybatis:
+  #映射配置文件路径
+#  mapper-locations: classpath:mybatis/mapper/*.xml
+  #核心配置文件路径
+  config-location: classpath:mybatis/mybatis-config.xml

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="net.xdclass.product_service.mapper.BitcoinMapper">
+
+    <select id="getBitcoins" resultType="net.xdclass.product_service.domain.Bitcoin">
+        select * from Bitcoin order by height DESC
+    </select>
+
+
+    <insert id="add">
+        insert into Bitcoin(height,timestamp,hash,size,tx_count,confirmations)
+        values(#{height},#{timestamp},#{hash},#{size},#{tx_count},#{confirmations})
+    </insert>
+
+    <select id="selectOne" resultType="net.xdclass.product_service.domain.Bitcoin">
+        select * from Bitcoin where height=#{id}
+    </select>
+
+</mapper>

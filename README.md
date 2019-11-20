@@ -9,7 +9,7 @@ This would be a quicker way for visualisation.
 The specific instructions of its use please see the README.md in its directory.
 ```
 ```
-For an integration way, you could directly use the "blockchain_front_end".
+For an integration way, you should select "blockchain_front_end".
 This would be an integrated way which requires backend for visualisation.
 The specific instructions of its use please see the README.md in its directory.
 ```

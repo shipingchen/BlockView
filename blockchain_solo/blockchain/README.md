@@ -11,14 +11,14 @@ Before using the code, you may need to make sure you have Node.js, Vue.js and Vi
 ```
 The main project files are placed in "src" directory, other directories are configurations.
 In src, there are several folders and files as follows:
-assets - static configurations (Languages, Block Numbers, etc.)
-components - project component (Menu Bar)
-plugins - element.js
-views - web pages (BTC, Ethereum, Animations, Search)
-APP.vue - project entry
-element-variables.scss - general styles
-main.js - peoject main file
-router.js - routing paths
+--- assets - static configurations (Languages, Block Numbers, etc.)
+--- components - project component (Menu Bar)
+--- plugins - element.js
+--- views - web pages (BTC, Ethereum, Animations, Search)
+--- APP.vue - project entry
+--- element-variables.scss - general styles
+--- main.js - peoject main file
+--- router.js - routing paths
 ```
 
 ### Installations

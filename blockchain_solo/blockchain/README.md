@@ -9,7 +9,7 @@ Before using the code, you may need to make sure you have Node.js, Vue.js and Vi
 
 ### Directories
 ```
-The main project files are placed in "src" directory, other directories and files such as "public" and "config.js" are configurations of the project.
+The main project files are placed in "src" directory, other directories are configurations.
 In src, there are several folders and files as follows:
 assets - static configurations (Languages, Block Numbers, etc.)
 components - project component (Menu Bar)
@@ -29,7 +29,8 @@ router.js - routing paths
 
 ### Deploy Develoment Environment
 ```
-npm run serve
+1. npm run serve
+2. you can see the project where it will be run in the terminal.
 ```
 
 ### Run the Project

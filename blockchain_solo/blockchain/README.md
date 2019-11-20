@@ -1,28 +1,43 @@
 
 
-# Block Eye
+# Block Eye (Frontend Solo Project)
 
-### Dependencies
+### Prerequisites
 ```
-npm install
+Before using the code, you may need to make sure you have Node.js, Vue.js and Visual Studio Code on your PC. 
 ```
 
-### Deploy Dev Environment
+### Directories
+```
+The main project files are placed in "src" directory, other directories and files such as "public" and "config.js" are configurations of the project.
+In src, there are several folders and files as follows:
+assets - static configurations (Languages, Block Numbers, etc.)
+components - project component (Menu Bar)
+plugins - element.js
+views - web pages (BTC, Ethereum, Animations, Search)
+APP.vue - project entry
+element-variables.scss - general styles
+main.js - peoject main file
+router.js - routing paths
+```
+
+### Installations
+```
+1. Enter into the project via terminal.
+2. Type "npm install" to install dependencies, once finished you can see a new folder "node modules"
+```
+
+### Deploy Develoment Environment
 ```
 npm run serve
 ```
 
-### Package
+### Run the Project
 ```
-npm run build
-```
-
-
-
-### Project Instructions
-
-1. Need to check the latest block number first (Ethereum and/or BTC).
-2. Modify the starting block number for Ethereum and/or BTC at src/assets/data/data.js.
-3. Save the files.
-4. Check whether the webpage is real-time updated or not.
+1. Enter into the project via terminal.
+2. Type "npm run serve" to start the project.
+3. Need to check the latest block number at offcial blockchain website(Ethereum and/or BTC).
+4. Modify the starting block number for Ethereum and/or BTC at src/assets/data/data.js.
+5. Save all the files.
+6. Check again whether the current webpage is real-time updated or not.
 ```

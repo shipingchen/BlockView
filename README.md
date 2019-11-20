@@ -2,7 +2,7 @@
 This is an open source for blockchain visulisation.
 
 ### Block Eye Blockchain Visualisation Project
-Two strategies to use the code:
+Two strategies to use the frontend code as follows:
 ```
 For frontend-solo way, you could directly use the "blockchain_solo".
 This would be a quicker way for visualisation.

@@ -42,3 +42,9 @@ In src structure, there are several folders and files as follows:
 5. Save all the files.
 6. Check again whether the current webpage is real-time updated or not.
 ```
+
+### What you can see after the above all
+```
+1. The welcome page of the Block Eye visualisation platform.
+2. The menu bar for BTC, Ethereum, Search and language localisation.
+```
